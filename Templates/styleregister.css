@@ -39,7 +39,7 @@ body {
 }
 .wrapper {
     width: 100%;
-    max-width: 420px;
+    max-width: 85%;
     max-height: 740px; /* Este se mantiene como límite en pantallas grandes */
     background: white;
     border: 2px solid rgba(255, 255, 255, .2);
