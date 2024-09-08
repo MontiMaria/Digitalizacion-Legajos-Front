@@ -50,14 +50,6 @@ body {
     padding: 30px 40px;
     margin: 30px; /* Esto asegura un margen a los lados */
 }
-
-/* Añadir media query para pantallas más pequeñas */
-@media (max-width: 768px) {
-    .wrapper {
-        padding: 20px;
-        margin: 30px auto;
-    }
-}
 .wrapper h1 {
     font-size: 36px;
     text-align: center;
