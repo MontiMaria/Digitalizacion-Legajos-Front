@@ -51,13 +51,6 @@ body {
     margin: 30px; /* Esto asegura un margen a los lados */
 }
 
-/* Añadir media query para pantallas más pequeñas */
-@media (max-width: 768px) {
-    .wrapper {
-        padding: 20px;
-        margin: 30px auto;
-    }
-}
 .wrapper h1 {
     font-size: 36px;
     text-align: center;
@@ -102,4 +95,19 @@ body {
     color: #ffffff;
     font-weight: 600;
     margin: 20px 0;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 35px;
+    font-size: 14px;
+    color: white;
+    background-color: #00b1c7;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #19cae1;
 }
