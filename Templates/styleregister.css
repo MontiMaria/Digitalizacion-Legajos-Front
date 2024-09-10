@@ -58,8 +58,10 @@ body {
 }
 @media (max-width: 768px) {
     .wrapper{
-        margin-left: 0px;
+
         margin: 30px;
+        margin-left: 55px;
+        height: 760px;
     }
 }
 .wrapper h1 {
