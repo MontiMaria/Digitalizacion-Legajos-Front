@@ -37,9 +37,14 @@ body {
     height: auto; 
     width: 20%; 
 }
+@media (max-width: 1024px) {
+    .nav-wrapper-white img {
+        width: 45%; 
+    }
+}
 @media (max-width: 768px) {
     .nav-wrapper-white img {
-        width: 70%; 
+        width: 60%; 
     }
 }
 .wrapper {
@@ -56,12 +61,20 @@ body {
     margin: 30px;
     margin-left: 90px;
 }
+@media (max-width: 1024px) {
+    .wrapper{
+        margin: 30px;
+        margin-left: 115px;
+        height: 760px;
+        width: 650px;
+    }
+}
 @media (max-width: 768px) {
     .wrapper{
-
         margin: 30px;
         margin-left: 55px;
         height: 760px;
+        width: 320px;
     }
 }
 .wrapper h1 {
