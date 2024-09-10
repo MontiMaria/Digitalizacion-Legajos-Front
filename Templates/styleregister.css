@@ -35,12 +35,17 @@ body {
 .nav-wrapper-white img {
     max-height: 100%;
     height: auto; 
-    width: auto; 
+    width: 20%; 
+}
+@media (max-width: 768px) {
+    .nav-wrapper-white img {
+        width: 70%; 
+    }
 }
 .wrapper {
     width: 100%;
-    max-width: 85%;
-    max-height: 740px; /* Este se mantiene como límite en pantallas grandes */
+    max-width: 75%;
+    max-height: 70%;
     background: white;
     border: 2px solid rgba(255, 255, 255, .2);
     backdrop-filter: blur(20px);
@@ -48,7 +53,14 @@ body {
     color: #5C5C5C;
     border-radius: 10px;
     padding: 30px 40px;
-    margin: 30px; /* Esto asegura un margen a los lados */
+    margin: 30px;
+    margin-left: 90px;
+}
+@media (max-width: 768px) {
+    .wrapper{
+        margin-left: 0px;
+        margin: 30px;
+    }
 }
 .wrapper h1 {
     font-size: 36px;

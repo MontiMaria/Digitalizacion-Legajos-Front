@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="Templates/styleindex.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>GBA - Iniciar Sesion</title>
+    <link rel="icon" href="Templates/assets/Logo_PBSAS2.webp" type="image/x-icon">
 </head>
 <body>
     <div class="nav-wrapper-white">
@@ -18,8 +19,8 @@
         <form id="login-form">
             <h1>Bienvenido</h1>
             <div class="input-box">
-                <input type="text" id="username" placeholder="Usuario" required>
-                <i class='bx bxs-user'><box-icon name='user' type='solid'></box-icon></i>
+                <input type="text" id="dni" placeholder="DNI" maxlength="8" required>
+                <i class='bx bxs-id-card'><box-icon type='solid' name='id-card'></box-icon></i>
             </div>
             <div class="input-box">
                 <input type="password" id="password" placeholder="Contraseña" required>
@@ -37,18 +38,16 @@
     </div>
     <script>
         document.getElementById('login-link').addEventListener('click', function(event) {
-            event.preventDefault(); // Previene el comportamiento predeterminado del enlace
+            event.preventDefault(); 
 
             var form = document.getElementById('login-form');
-            var username = document.getElementById('username').value;
+            var dni = document.getElementById('dni').value;
             var password = document.getElementById('password').value;
 
             // Validación del formulario
-            if (form.checkValidity() && username.trim() !== '' && password.trim() !== '') {
-                // Redirige solo si el formulario es válido y el campo de usuario y contraseña no están vacíos
-                window.location.href = 'Templates/inicio.html'; // Redirige a la página de cambio de contraseña
+            if (form.checkValidity() && dni.trim() !== '' && password.trim() !== '') {
+                window.location.href = 'Templates/inicio.html'; 
             } else {
-                // Muestra los mensajes de validación
                 form.reportValidity();
             }
         });

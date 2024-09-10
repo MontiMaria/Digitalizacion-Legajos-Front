@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="styleregister.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <title>GBA - Registrarse</title>
+        <link rel="icon" href="assets/Logo_PBSAS2.webp" type="image/x-icon">
     </head>
     <body>
         <div class="container">
@@ -15,30 +16,50 @@
                     <img src="assets/logo.png" alt="logoGBA">
                 </nav>
             </div><br><br><br>
-        <div class="wrapper">
-            <form action="">
-                <h1>Registrarse</h1>
-                <div class="input-box">
-                    <label class="label-text">Nombre: </label>
-                    <input type="text" placeholder="" required>
-                </div>
-                <div class="input-box">
-                    <label class="label-text">Apellido: <input type="text" placeholder="" required></label>
-                </div>
-                <div class="input-box">
-                    <label class="label-text">DNI: <input type="text" placeholder="" maxlength="8" required></label>
-                </div>
-                <div class="input-box">
-                    <label class="label-text">Contraseña: <input type="password" placeholder="" required></label>
-                </div>
-                <div class="input-box">
-                    <label class="label-text">Confirmar Contraseña: <input type="password" placeholder="" required></label>
-                </div>
-                <div class="remember-forgot">
-                    <a href="inicio.html" class="btn" id="reset-password-link">Crear Usuario</a>
-                </div>
-            </form> 
+            <div class="wrapper">
+                <form id="login-form" action="">
+                    <h1>Registrarse</h1>
+                    <div class="input-box">
+                        <label class="label-text">Nombre: <input type="text" id="name" placeholder="" required></label> 
+                    </div>
+                    <div class="input-box">
+                        <label class="label-text">Apellido: <input type="text" id="last-name" placeholder="" required></label>
+                    </div>
+                    <div class="input-box">
+                        <label class="label-text">DNI: <input type="text" id="dni" placeholder="" maxlength="8" required></label>
+                    </div>
+                    <div class="input-box">
+                        <label class="label-text">Contraseña: <input type="password" id="password" placeholder="" required></label>
+                    </div>
+                    <div class="input-box">
+                        <label class="label-text">Confirmar Contraseña: <input type="password" id="confirm-password" placeholder="" required></label>
+                    </div>
+                    <div class="remember-forgot">
+                        <a href="../index.html" class="btn" id="create-user">Crear Usuario</a>
+                    </div>
+                </form> 
+            </div>
         </div>
-        </div>
+        <script>
+            document.getElementById('create-user').addEventListener('click', function(event) {
+                event.preventDefault(); 
+    
+                var form = document.getElementById('login-form');
+                var username = document.getElementById('name').value;
+                var lastName = document.getElementById('last-name').value;
+                var dni = document.getElementById('dni').value;
+                var password = document.getElementById('password').value;
+                var cpassword = document.getElementById('confirm-password').value;
+    
+                // Validación del formulario
+                if (form.checkValidity() &&  username.trim() !== '' && lastName.trim() !== '' && dni.trim() !== '' && password.trim() !== '' && cpassword.trim() !== '' && password === cpassword) {
+                    window.location.href = '../index.html'; 
+                } else if  (password !== cpassword) {
+                        alert('Las contraseñas no coinciden.');
+                    } else {
+                    form.reportValidity();
+                }
+            });
+        </script>
     </body>
 </html>
