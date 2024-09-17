@@ -11,6 +11,7 @@ body {
   overflow: hidden;
   background-color: whitesmoke;
   position: relative;
+  margin-top: 0.5%;
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
@@ -46,17 +47,6 @@ body {
 
 .topnav a:hover {
   background-color: #19cae1;
-  color: white;
-}
-
-/* Stylea el logo */
-.active {
-  background-color: whitesmoke;
-  color: white;
-}
-
-.active:hover {
-  background-color: whitesmoke;
   color: white;
 }
 
