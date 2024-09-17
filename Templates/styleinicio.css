@@ -40,6 +40,23 @@ body {
   border-radius: 15px;
 }
 
+@media (max-width: 1024px) {
+  .topnav a.icon {
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    margin-top: 1.5%; 
+  }
+}
+
+@media (max-width: 768px) {
+  .topnav a.icon {
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+  }
+}
+
 .topnav a.icon:hover {
   background-color: whitesmoke;
   color: #5C5C5C;
@@ -48,6 +65,18 @@ body {
 .topnav a:hover {
   background-color: #19cae1;
   color: white;
+}
+
+@media (max-width: 1024px) {
+  .active {
+      width: 45%; 
+  }
+}
+
+@media (max-width: 768px) {
+  .active {
+      width: 60%; 
+  }
 }
 
 header {
