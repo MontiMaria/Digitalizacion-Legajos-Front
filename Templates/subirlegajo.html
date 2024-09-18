@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleinicio.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>GBA - Subir Legajo</title>
+    <link rel="icon" href="assets/Logo_PBSAS2.webp" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="topnav">
+            <div class="logo-container">
+                <a href="inicio.html" class="logo-link">
+                    <img src="assets/logo.png" alt="Logo">
+                </a>
+              </div>
+            <div id="myLinks">
+                <a href="inicio.html">Inicio</a>
+                <a href="../index.html">Cerrar Sesion</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </div>    
+    </header>
+    <main><br><br>
+        <section class="search">
+            <h2>Subir Archivo de Legajo</h2>
+            <form action="#" method="post" enctype="multipart/form-data"> <!--action: a donde manda el legajo cuando apreto el boton, method: metodo utilizado para enviar los datos enctype: permite adjuntar img -->
+                <label for="legajo">Número de Legajo:</label>
+                <input type="text" id="legajo" name="legajo" placeholder="Ingrese número de legajo">
+                <label for="file-upload">Selecciona un archivo:</label>
+                <input type="file" id="file-upload" name="file-upload" accept=".pdf,.doc,.docx,.jpg,.png"><br>
+                <button type="submit">Subir Archivo</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 GBA. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
