@@ -112,12 +112,13 @@ body {
     display: flex;
     justify-content: space-between;
     font-size: 14.5px;
-    margin: -15px 0 15px;
+    margin: 0px 0 15px;
 }
 
 .remember-forgot label input {
     accent-color: #5C5C5C;
-    margin-right: 3px;   
+    margin-right: 3px; 
+    padding-top: 30%;  
 }
 
 .remember-forgot a {
@@ -164,6 +165,12 @@ body {
     font-weight: 600;
     color: #5C5C5C;
     margin-left: 30%;
+}
+
+@media (max-width: 440px) {
+    #forgotpassw {
+        margin-left: 20%;
+    }
 }
 
 #forgotpassw:hover {
