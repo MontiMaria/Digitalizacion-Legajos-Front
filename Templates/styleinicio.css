@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap");
 
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
@@ -111,9 +119,50 @@ body {
   color: #5C5C5C;
 }
 
-.topnav a:hover {
-  background-color: #19cae1;
-  color: white;
+nav {
+  justify-content: center;
+  align-items: center;
+  padding: 24px 40px;
+}
+
+nav a {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.link {
+  text-decoration: none;
+  padding: 0.3rem 0.75rem;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fefefe;
+  position: relative;
+  transition: color 0.25s;
+  z-index: 1;
+  
+}
+
+.link:hover {
+  color: #fefefe;
+}
+
+.link::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #19cae1; 
+  transform: scaleY(0); 
+  transform-origin: top;
+  z-index: -1; 
+  transition: transform 0.45s ease; 
+  border-radius: 10px;
+}
+
+.link:hover::after {
+  transform: scaleY(1); 
 }
 
 header {
