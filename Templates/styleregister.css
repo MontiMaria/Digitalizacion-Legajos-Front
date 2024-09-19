@@ -39,7 +39,7 @@ body {
 }
 @media (max-width: 1024px) {
     .nav-wrapper-white img {
-        width: 45%; 
+        width: 25%; 
     }
 }
 @media (max-width: 768px) {
@@ -48,9 +48,8 @@ body {
     }
 }
 .wrapper {
-    width: 100%;
-    max-width: 75%;
-    max-height: 70%;
+    display: flex;
+    flex-wrap: wrap;
     background: white;
     border: 2px solid rgba(255, 255, 255, .2);
     backdrop-filter: blur(20px);
@@ -58,35 +57,18 @@ body {
     color: #5C5C5C;
     border-radius: 10px;
     padding: 30px 40px;
-    margin: 30px;
-    margin-left: 90px;
+    margin: 9%;
 }
-@media (max-width: 1024px) {
-    .wrapper{
-        margin: 30px;
-        margin-left: 115px;
-        height: 760px;
-        width: 650px;
-    }
-}
-@media (max-width: 768px) {
-    .wrapper{
-        margin: 30px;
-        margin-left: 55px;
-        height: 760px;
-        width: 320px;
-    }
-}
+
 .wrapper h1 {
     font-size: 36px;
     text-align: center;
 }
-.wrapper .input-box {
-    position: relative;
-    width: 100%;
-    height: 50px;
-    margin: 50px 0;
+
+.input-box {
+    flex: 1 0 5rem;
 }
+
 .input-box input {
     width: 100%;
     height: 100%;
@@ -97,7 +79,7 @@ body {
     border-radius: 40px;
     font-size: 16px;
     color: #5C5C5C;
-    padding: 20px 45px 20px 20px;
+    padding: 12px;
     margin: 10px 0;
 }
 .input-box input::placeholder {
