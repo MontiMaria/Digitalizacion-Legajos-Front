@@ -33,8 +33,11 @@ body {
 /* Estilo del logo*/
 .logo-link img {
   display: block;
-  width: auto;
+  width: 80%;
   height: auto;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10%;
 }
 
 /* Asegura que el enlace del logo no herede los estilos de hover */

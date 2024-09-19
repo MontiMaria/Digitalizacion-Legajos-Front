@@ -44,7 +44,13 @@ body {
 
 @media (max-width: 1024px) {
     .nav-wrapper-white img {
-        width: 25%; 
+        width: 35%; 
+    }
+}
+
+@media (max-width: 920px) {
+    .nav-wrapper-white img {
+        width: 50%; 
     }
 }
 
