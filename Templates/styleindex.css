@@ -67,6 +67,12 @@ body {
     margin: 9%;
 }
 
+@media (max-width: 768px) {
+    .wrapper {
+        margin-top: 30%;
+    }
+}
+
 .wrapper h1 {
     font-size: 36px;
     text-align: center;
