@@ -200,7 +200,8 @@ form label {
   margin-bottom: 5px;
 }
 
-form input {
+form input, form select, form option {
+  font-family: "Poppins", sans-serif;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;

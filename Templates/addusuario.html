@@ -20,8 +20,8 @@
             <div id="myLinks">
                 <nav>
                     <a href="inicio.html" class="link">Inicio</a>
-                    <a href="addusuario.html" class="link">Agregar Usuario</a>
-                    <a href="../index.html" class="link">Cerrar Sesion</a>
+                        <a href="subirlegajo.html" class="link">Subir Legajo</a>
+                        <a href="../index.html" class="link">Cerrar Sesion</a>
                 </nav>
             </div>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -31,15 +31,28 @@
     </header>
     <main><br><br>
         <section class="search">
-            <h2>Subir Archivo de Legajo</h2>
-            <form action="#" method="post" enctype="multipart/form-data"> <!--action: a donde manda el legajo cuando apreto el boton, method: metodo utilizado para enviar los datos enctype: permite adjuntar img -->
-                <label for="legajo">Nombre y apellido:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Ingrese nombre y apellido">
-                <label for="file-upload">Selecciona un archivo:</label>
-                <input type="file" id="file-upload" name="file-upload" accept=".pdf,.doc,.docx,.jpg,.png"><br>
-                <button type="submit">Subir Archivo</button>
+            <h2>Agregar Usuario</h2>
+            <form action="#" method="post" enctype="multipart/form-data"> <!--action: a donde manda el usuario cuando apreto el boton, method: metodo utilizado para enviar los datos enctype: permite adjuntar img -->
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese nombre">              
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Ingrese apellido">               
+                <label for="dni">DNI:</label>
+                <input type="number" maxlength="8" id="dni" name="dni" placeholder="Ingrese DNI">                
+                <!-- Aquí agregas el select para que el usuario elija la escuela -->
+                <label for="escuela">Escuela:</label>
+                <select name="escuela" id="escuela">
+                    <option value="">Selecciona...</option>
+
+                    <option value="0">Escuela N°1 "Pepito"</option>
+                    <option value="1">Escuela N°2 "Juanchito"</option>
+                    <option value="2">Escuela N°3 "Ricardito"</option>
+                    <option value="3">Escuela N°7 "Josefito"</option>
+                </select><br>               
+                <button type="submit">Crear Usuario</button>
             </form>
         </section>
+        
     </main>
 
     <footer>
