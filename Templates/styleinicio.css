@@ -180,7 +180,7 @@ main {
   padding: 20px;
 }
 
-.search {
+.search, .results {
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
